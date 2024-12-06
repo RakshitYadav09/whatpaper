@@ -1,0 +1,8 @@
+.header-title {
+    color: #00f0ff;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
