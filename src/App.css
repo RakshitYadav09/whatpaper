@@ -1,81 +1,61 @@
 .app-container {
-  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+}
+
+.input-fields {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #1b2735, #4b0082);
-  padding: 20px;
-  color: #e0e0e0;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.header-title {
-  font-size: 3rem;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  color: #f0f0f0;
-  margin-bottom: 30px;
+.input-fields input {
+  padding: 8px;
+  margin-top: 5px;
+  width: 250px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
 }
 
-.input-box {
-  background: #262626;
-  border: 1px solid #8a2be2;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 15px;
-  width: 100%;
-  max-width: 400px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.input-label {
-  color: #8a2be2;
-  font-size: 1rem;
-  margin-bottom: 8px;
-  font-family: 'Roboto', sans-serif;
-}
-
-.input-field {
-  width: 100%;
-  background: transparent;
-  border: 2px solid #8a2be2;
-  border-radius: 8px;
-  padding: 10px;
-  color: #fff;
-  font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
-  outline: none;
-  transition: border-color 0.3s ease;
-}
-
-.input-field:focus {
-  border-color: #b09fe5;
-}
-
-.color-preview {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  margin-left: 10px;
-  background: #fff;
-  vertical-align: middle;
-}
-
-.search-button {
-  margin-top: 20px;
-  background-color: #8a2be2;
+.input-fields button {
+  padding: 10px 20px;
+  background-color: #007bff;
   color: white;
   border: none;
-  padding: 12px 20px;
-  font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
-  border-radius: 8px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  margin-top: 15px;
 }
 
-.search-button:hover {
-  background-color: #b09fe5;
+.input-fields button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.wallpapers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.wallpaper-item {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.download-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
 }
